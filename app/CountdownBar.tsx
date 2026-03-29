@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function CountdownBar() {
   const [visible, setVisible] = useState(false);
   const [purchased, setPurchased] = useState(false);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -45,14 +46,54 @@ export default function CountdownBar() {
           <span className="sm:hidden text-xs" style={{ color: '#b44', fontWeight: 600 }}>{purchased ? '2' : '3'} Spots Left</span>
         </div>
         <button
-          onClick={() => router.push('/checkout')}
+          onClick={() => { setLoading(true); router.push('/checkout'); }}
           type="button"
-          className="text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:brightness-110 hover:scale-105"
+          disabled={loading}
+          className="text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer hover:brightness-110 hover:scale-105 disabled:opacity-70"
           style={{ background: 'linear-gradient(135deg, #3a6347, #264432)' }}
         >
           Get Access
         </button>
       </div>
+
+      {loading && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9999,
+            background: 'rgba(249,246,242,0.95)',
+            backdropFilter: 'blur(6px)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 20,
+          }}
+        >
+          <div
+            style={{
+              width: 40,
+              height: 40,
+              border: '3px solid rgba(58,99,71,0.2)',
+              borderTopColor: '#3a6347',
+              borderRadius: '50%',
+              animation: 'spin 0.8s linear infinite',
+            }}
+          />
+          <p
+            style={{
+              fontFamily: "'Lora', Georgia, serif",
+              fontSize: 18,
+              color: '#1e1a14',
+              fontWeight: 500,
+            }}
+          >
+            Secure payment loading…
+          </p>
+          <style dangerouslySetInnerHTML={{ __html: '@keyframes spin { to { transform: rotate(360deg); } }' }} />
+        </div>
+      )}
     </div>
   );
 }
