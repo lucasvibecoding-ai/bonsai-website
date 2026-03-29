@@ -361,14 +361,14 @@ export default function Home() {
 
             <div className="module-card">
               <div className="module-label">Module 1</div>
-              <h3>Choose Your First Tree &amp; Keep It Alive</h3>
-              <div className="module-sub">The right tree for your space, your light, and your life. No more dead plants.</div>
+              <h3>Choose Your First Tree, Get the Right Tools &amp; Keep It Alive</h3>
+              <div className="module-sub">The right tree, the right tools, and the right setup for your space, your light, and your life. No more dead plants.</div>
               <div className="module-body">
                 <div className="module-img"><Image src="/module1.jpg" alt="Choose Your First Tree" fill style={{ objectFit: 'cover' }} /></div>
                 <ul>
+                  <li>&#10022; The <strong>exact tools you need to start</strong> (and the ones you don&apos;t) — what to buy, where to buy it, and what&apos;s a waste of money. Plus <strong>exactly which tree to get and where to find it</strong></li>
                   <li>&#10022; The <strong>3 species that are nearly impossible to kill</strong> and the 2 &quot;beginner&quot; species that actually aren&apos;t (one is the most commonly recommended tree on the internet)</li>
                   <li>&#10022; The <strong>watering test that takes 2 seconds</strong> that prevents 90% of bonsai deaths</li>
-                  <li>&#10022; Why your <strong>$12 nursery plant is a better starting point</strong> than a $50 &quot;pre-trained bonsai&quot; (and where to find the best raw material)</li>
                   <li>&#10022; <strong>Indoor vs outdoor: the decision that determines everything.</strong> Get this wrong and your tree is dead in 3 months no matter what else you do</li>
                 </ul>
               </div>
