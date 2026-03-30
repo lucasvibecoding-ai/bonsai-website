@@ -187,6 +187,8 @@ export default function Home() {
           .now-only { font-size: 32px !important; }
           .cta-btn { font-size: 1.5rem !important; }
           .faq-q-text { font-weight: 500 !important; }
+          .stack-row { padding: 6px 0 !important; font-size: 15px; }
+          .stack-row .val { font-size: 15px !important; }
         }
       `}} />
 
