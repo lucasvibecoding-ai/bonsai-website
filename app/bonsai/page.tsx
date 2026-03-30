@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import CheckoutButton from "./CheckoutButton";
-import CountdownBar from "./CountdownBar";
-import FaqAccordion from "./FaqAccordion";
+import CheckoutButton from "../CheckoutButton";
+import CountdownBar from "../CountdownBar";
+import FaqAccordion from "../FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Bonsai: Learn The 1,500-Year-Old Japanese Practice of Calming Down Your Mind",
