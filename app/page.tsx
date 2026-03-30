@@ -5,7 +5,7 @@ import CountdownBar from "./CountdownBar";
 import FaqAccordion from "./FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Bonsai: Learn The 1,500-Year-Old Japanese Practice of Calming Down Your Mind",
+  title: "Bonsai: Learn The 1,500-Year-Old Japanese Art of Shaping Trees & Calming Your Mind",
   description:
     "Bonsai is more than just a tree. It's a 1,500-year-old Japanese art of releasing stress, easing anxiety, and letting go of overthinking.",
 };
@@ -192,14 +192,14 @@ export default function Home() {
           {/* HERO */}
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
             <div className="badge">No prior experience required</div>
-            <h1>Bonsai: Learn the 1,500-Year-Old Japanese Practice of <span className="accent">Calming Down Your Mind</span></h1>
+            <h1>Bonsai: Learn the 1,500-Year-Old Japanese Art of <span className="accent">Shaping Trees &amp; Calming Your Mind</span></h1>
 
             <div className="split" style={{ paddingTop: 28, paddingBottom: 0 }}>
               <div className="split-text" style={{ textAlign: 'left', flex: '1.5' }}>
                 <p style={{ marginBottom: 0, textAlign: 'left' }}>
                   Bonsai is more than just a tree.
                   <br /><br />
-                  It&apos;s an ancient Japanese art of releasing stress, easing anxiety, and letting go of overthinking.
+                  It&apos;s an ancient Japanese practice of releasing stress, easing anxiety, and letting go of overthinking.
                 </p>
               </div>
               <div style={{ flex: '1 1 50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -228,17 +228,17 @@ export default function Home() {
           </section>
 
 
-          {/* WHEN MEDITATION DOESN'T WORK */}
+          {/* BUT HERE'S WHAT REALLY KEEPS YOU UP */}
           <section style={{ padding: '0 0 56px' }}>
-            <h2 className="bonsai-center" style={{ marginBottom: 64 }}>When meditation doesn&apos;t work.</h2>
+            <h2 className="bonsai-center" style={{ marginBottom: 64 }}>But here&apos;s what really keeps you up at night.</h2>
             <div className="split" style={{ paddingTop: 0, paddingBottom: 0, gap: 64 }}>
               <div className="split-text" style={{ flex: '1.5' }}>
-                <p>Some people can sit still and clear their mind.</p>
-                <p>Most can&apos;t.</p>
-                <p>If you&apos;ve tried meditation and your brain just gets louder, you&apos;re not broken.</p>
-                <p>You just need something for your hands to do while your mind learns to be quiet.</p>
-                <p>Bonsai is <strong>meditation that doesn&apos;t feel like meditation.</strong></p>
-                <p>Your hands are busy. Your eyes are focused. And somewhere between the second and third cut, <strong>the noise stops.</strong></p>
+                <p>You scroll. You consume. You watch. You buy things made by machines in factories.</p>
+                <p>When was the last time you <strong>created</strong> something?</p>
+                <p>When was the last time you made something with your hands that made someone say <strong>&quot;Wait... YOU made this?&quot;</strong></p>
+                <p>When was the last time you felt completely present — not thinking about work, not checking your phone, just... creating?</p>
+                <p>You want a hobby that&apos;s actually meaningful. Something meditative. Something therapeutic.</p>
+                <p>Not another thing to consume. <strong>Something to create.</strong></p>
               </div>
               <div style={{ flex: '1.2', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image src="/meditation.png" alt="Hands working on a bonsai tree" width={600} height={600} style={{ width: '100%', height: 'auto', borderRadius: 16, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }} />
