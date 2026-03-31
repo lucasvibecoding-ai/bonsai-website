@@ -32,9 +32,16 @@ export async function POST(request: Request) {
 
   if (event.type === 'payment_intent.succeeded') {
     const paymentIntent = event.data.object as Stripe.PaymentIntent;
-    const customerEmail = paymentIntent.receipt_email;
+
+    let customerEmail = paymentIntent.receipt_email;
+
+    if (!customerEmail && paymentIntent.latest_charge) {
+      const charge = await stripe.charges.retrieve(paymentIntent.latest_charge as string);
+      customerEmail = charge.billing_details?.email || null;
+    }
 
     const toEmail = customerEmail || 'hello@thebonsaipath.com';
+    console.log(`Sending confirmation email to: ${toEmail} (receipt_email was: ${paymentIntent.receipt_email})`);
     const html = await render(OrderConfirmation({ customerEmail: toEmail }));
 
     await resend.emails.send({
