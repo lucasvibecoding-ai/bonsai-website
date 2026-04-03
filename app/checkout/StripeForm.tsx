@@ -12,26 +12,42 @@ import PayPalForm from './PayPalForm';
 
 const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
+const EMAIL_ERROR = 'Please enter a valid email address above to continue.';
+
 export default function StripeForm({ email, onEmailChange, paypalEmail }: { email: string; onEmailChange: (v: string) => void; paypalEmail: string }) {
   const stripe = useStripe();
   const elements = useElements();
   const [isProcessing, setIsProcessing] = useState(false);
-  const [error, setError] = useState('');
-  const [emailTouched, setEmailTouched] = useState(false);
+  const [expressError, setExpressError] = useState('');
+  const [cardError, setCardError] = useState('');
 
   const emailValid = isValidEmail(email);
 
+  const showExpressEmailError = () => {
+    setExpressError(EMAIL_ERROR);
+    setCardError('');
+  };
+
+  const showCardEmailError = () => {
+    setCardError(EMAIL_ERROR);
+    setExpressError('');
+  };
+
+  const clearErrors = () => {
+    setExpressError('');
+    setCardError('');
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setEmailTouched(true);
     if (!emailValid) {
-      setError('Please enter your email address above.');
+      showCardEmailError();
       return;
     }
     if (!stripe || !elements) return;
 
+    clearErrors();
     setIsProcessing(true);
-    setError('');
 
     const { error: submitError } = await stripe.confirmPayment({
       elements,
@@ -42,20 +58,19 @@ export default function StripeForm({ email, onEmailChange, paypalEmail }: { emai
     });
 
     if (submitError) {
-      setError(submitError.message || 'Payment failed. Please try again.');
+      setCardError(submitError.message || 'Payment failed. Please try again.');
       setIsProcessing(false);
     }
   };
 
   const onExpressCheckoutConfirm = async () => {
     if (!emailValid) {
-      setError('Please enter your email address above before using express checkout.');
-      setEmailTouched(true);
+      showExpressEmailError();
       return;
     }
     if (!stripe || !elements) return;
+    clearErrors();
     setIsProcessing(true);
-    setError('');
 
     const { error: confirmError } = await stripe.confirmPayment({
       elements,
@@ -66,15 +81,14 @@ export default function StripeForm({ email, onEmailChange, paypalEmail }: { emai
     });
 
     if (confirmError) {
-      setError(confirmError.message || 'Payment failed. Please try again.');
+      setCardError(confirmError.message || 'Payment failed. Please try again.');
       setIsProcessing(false);
     }
   };
 
   const onExpressCheckoutClick = (event: StripeExpressCheckoutElementClickEvent) => {
     if (!emailValid) {
-      setError('Please enter your email address above before using express checkout.');
-      setEmailTouched(true);
+      showExpressEmailError();
       return;
     }
     event.resolve();
@@ -82,9 +96,9 @@ export default function StripeForm({ email, onEmailChange, paypalEmail }: { emai
 
   return (
     <div>
-      {emailTouched && !emailValid && (
+      {expressError && (
         <p style={{ color: '#df1b41', fontSize: '14px', marginBottom: '12px' }}>
-          Please enter a valid email address above to continue.
+          {expressError}
         </p>
       )}
 
@@ -100,7 +114,7 @@ export default function StripeForm({ email, onEmailChange, paypalEmail }: { emai
       />
 
       <div style={{ marginTop: 12 }}>
-        <PayPalForm email={paypalEmail} onEmailError={() => { setEmailTouched(true); setError('Please enter your email address above.'); }} />
+        <PayPalForm email={paypalEmail} onEmailError={showExpressEmailError} />
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '24px 0' }}>
@@ -118,9 +132,9 @@ export default function StripeForm({ email, onEmailChange, paypalEmail }: { emai
             },
           }}
         />
-        {error && (
+        {cardError && (
           <p style={{ color: '#df1b41', fontSize: '14px', marginTop: '12px' }}>
-            {error}
+            {cardError}
           </p>
         )}
         <button
