@@ -597,8 +597,8 @@ export default function Home() {
             <h2 className="bonsai-center" style={{ marginBottom: 18 }}>Order today and you also get:</h2>
 
             <div className="bonus-card mega">
-              <div className="bonus-header"><div className="bonus-label">Extra Bonus</div><div className="bonus-value">$79 value</div></div>
-              <h3>The 5 Classical Styles, Display &amp; Styling Masterclass</h3>
+              <div className="bonus-header"><div className="bonus-label">Mega Bonus</div><div className="bonus-value">$79 value</div></div>
+              <h3>Bonsai Styles &amp; Display Guide</h3>
               <div className="bonus-desc">Master the iconic bonsai forms and turn your tree into the centerpiece of any room.</div>
               <div className="bonus-body">
                 <div className="bonus-img"><Image src="/megabonus.jpg" alt="Classical Styles, Display and Styling Masterclass" fill style={{ objectFit: 'cover' }} /></div>
