@@ -65,7 +65,6 @@ export default function FaqAccordion() {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             type="button"
           >
-            <span className="faq-badge">Q</span>
             <span className="faq-q-text">{faq.q}</span>
             <span className={`faq-icon ${openIndex === i ? 'open' : ''}`}>+</span>
           </button>
