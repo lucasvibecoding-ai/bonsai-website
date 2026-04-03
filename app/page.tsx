@@ -196,6 +196,7 @@ export default function Home() {
           .hereswhatyouget-mobile { display: block !important; }
           .hero-text-desktop { display: none !important; }
           .hero-text-mobile { display: block !important; }
+          .no-exp { font-size: 11px !important; letter-spacing: 1.5px !important; margin-bottom: 12px !important; }
           .bonus-card h3, .module-card h3 { margin-bottom: 14px !important; }
           .bonus-desc, .module-sub { margin-bottom: 22px !important; }
           .badge { font-size: 10px; letter-spacing: 1.5px; padding: 5px 12px; }
@@ -217,7 +218,7 @@ export default function Home() {
 
           {/* HERO */}
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
-            <p style={{ fontSize: 16, fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--ink-muted)', marginBottom: 20 }}>No prior experience required</p>
+            <p className="no-exp" style={{ fontSize: 16, fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--ink-muted)', marginBottom: 20 }}>No prior experience required</p>
             <h1>Learn the 1,500-Year-Old Japanese Art of <span className="accent">Sculpting Trees</span></h1>
             <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: 'var(--ink-muted)', marginTop: 8, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>Without needing years of practice or expensive supplies</p>
 
