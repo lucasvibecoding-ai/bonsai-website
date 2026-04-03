@@ -7,6 +7,7 @@ import {
   useStripe,
   useElements,
 } from '@stripe/react-stripe-js';
+import type { StripeExpressCheckoutElementClickEvent } from '@stripe/stripe-js';
 
 const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
@@ -69,13 +70,13 @@ export default function StripeForm({ email, onEmailChange, paypalSlot }: { email
     }
   };
 
-  const onExpressCheckoutClick = ({ resolve }: { resolve: (value?: unknown) => void }) => {
+  const onExpressCheckoutClick = (event: StripeExpressCheckoutElementClickEvent) => {
     if (!emailValid) {
       setError('Please enter your email address above before using express checkout.');
       setEmailTouched(true);
       return;
     }
-    resolve();
+    event.resolve();
   };
 
   return (
