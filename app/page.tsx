@@ -546,7 +546,7 @@ export default function Home() {
               <h3>The Bonsai Aftercare Guide</h3>
               <div className="bonus-desc">Your tree is trying to talk to you. This guide teaches you to listen.</div>
               <div className="bonus-body">
-                <div className="bonus-img"><Image src="/bonus3.jpg" alt="Bonsai Troubleshooting Guide" fill style={{ objectFit: 'cover' }} /></div>
+                <div className="bonus-img"><Image src="/bonus3.jpg" alt="Bonsai Aftercare Guide" fill style={{ objectFit: 'cover' }} /></div>
                 <ul>
                   <li>&#10022; <strong>Yellowing leaves?</strong> It&apos;s not always overwatering: the 4 possible causes and fixes</li>
                   <li>&#10022; <strong>Dropping leaves suddenly?</strong> Seasonal, stress, or dying: how to tell the difference in 30 seconds</li>
@@ -563,7 +563,7 @@ export default function Home() {
             <div className="stack-row stack-total"><span className="label">&#10003; 5 Core Modules</span><span className="val">$139</span></div>
             <div className="stack-row"><span className="label">&#10003; Mindfulness Through Bonsai</span><span className="val">$47</span></div>
             <div className="stack-row"><span className="label">&#10003; Seasonal Care Calendar</span><span className="val">$37</span></div>
-            <div className="stack-row"><span className="label">&#10003; Bonsai Troubleshooting Guide</span><span className="val">$29</span></div>
+            <div className="stack-row"><span className="label">&#10003; Bonsai Aftercare Guide</span><span className="val">$29</span></div>
             <div className="stack-row" style={{ borderBottom: 'none' }}><span className="label" style={{ fontWeight: 700, color: 'var(--ink)' }}>Total Value</span><span className="val" style={{ fontSize: 16 }}>$252</span></div>
           </section>
 
@@ -601,7 +601,7 @@ export default function Home() {
               <h3>Bonsai Styles &amp; Display Guide</h3>
               <div className="bonus-desc">Master the iconic bonsai forms and turn your tree into the centerpiece of any room.</div>
               <div className="bonus-body">
-                <div className="bonus-img"><Image src="/megabonus.jpg" alt="Classical Styles, Display and Styling Masterclass" fill style={{ objectFit: 'cover' }} /></div>
+                <div className="bonus-img"><Image src="/megabonus.jpg" alt="Bonsai Styles and Display Guide" fill style={{ objectFit: 'cover' }} /></div>
                 <ul>
                   <li>&#10022; <strong>Formal Upright (Chokkan)</strong> the classic straight trunk, perfect symmetry. The most forgiving style for first-timers</li>
                   <li>&#10022; <strong>Informal Upright (Moyogi)</strong> gentle S-curves that mimic how real trees grow in nature</li>
@@ -631,8 +631,8 @@ export default function Home() {
             <div className="stack-row stack-total"><span className="label">&#10003; 5 Core Modules</span><span className="val">$139</span></div>
             <div className="stack-row"><span className="label">&#10003; Mindfulness Through Bonsai</span><span className="val">$47</span></div>
             <div className="stack-row"><span className="label">&#10003; Seasonal Care Calendar</span><span className="val">$37</span></div>
-            <div className="stack-row"><span className="label">&#10003; Bonsai Troubleshooting Guide</span><span className="val">$29</span></div>
-            <div className="stack-row"><span className="label">&#10003; Display &amp; Styling Masterclass</span><span className="val">$79</span></div>
+            <div className="stack-row"><span className="label">&#10003; Bonsai Aftercare Guide</span><span className="val">$29</span></div>
+            <div className="stack-row"><span className="label">&#10003; Bonsai Styles &amp; Display Guide</span><span className="val">$79</span></div>
             <div className="stack-row" style={{ borderBottom: 'none' }}><span className="label" style={{ fontWeight: 700, color: 'var(--ink)' }}>Total Value</span><span className="val" style={{ fontSize: 16 }}>$331</span></div>
           </section>
 
