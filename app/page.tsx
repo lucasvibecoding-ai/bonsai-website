@@ -186,6 +186,8 @@ export default function Home() {
           .instructor { flex-direction: column; align-items: center; }
           .instructor-text { text-align: left; }
           .course-intro { padding-top: 20px !important; }
+          .hero-divider { display: none !important; }
+          .price-old { font-size: 22px !important; }
           .instructor-img { width: 100% !important; max-width: 400px !important; height: auto !important; padding: 0 24px; border-radius: 16px; }
           .phil-block { padding: 20px; }
           .stack-row { max-width: 100%; }
@@ -212,7 +214,7 @@ export default function Home() {
           .payment-method-btn { font-size: 13px; padding: 10px 12px; }
           #hero { width: 100% !important; margin-top: 16px; }
           .now-only { font-size: 36px !important; }
-          .price-old { font-size: 20px !important; }
+          .price-old { font-size: 22px !important; }
           .cta-btn { font-size: 1.5rem !important; }
           .faq-q-text { font-weight: 500 !important; font-size: 18px !important; }
           .faq-q { font-size: 18px !important; }
@@ -252,7 +254,7 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="bonsai-divider" />
+          <div className="bonsai-divider hero-divider" />
 
           {/* SPLIT: CONTROL */}
           <section className="split">
