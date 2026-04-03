@@ -33,6 +33,10 @@ export async function POST(request: Request) {
   if (event.type === 'payment_intent.succeeded') {
     const paymentIntent = event.data.object as Stripe.PaymentIntent;
 
+    if (paymentIntent.metadata?.product_id !== process.env.STRIPE_PRODUCT_ID) {
+      return new Response('ok', { status: 200 });
+    }
+
     let customerEmail = paymentIntent.receipt_email;
 
     if (!customerEmail && paymentIntent.latest_charge) {
