@@ -26,7 +26,7 @@ export default function CountdownBar() {
         boxShadow: '0 -2px 12px rgba(0,0,0,0.15)',
       }}
     >
-      <div style={{ maxWidth: 900, margin: '0 auto', padding: '16px 16px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+      <div style={{ maxWidth: 900, margin: '0 auto', padding: '12px 16px', paddingBottom: 'calc(12px + env(safe-area-inset-bottom, 0px))', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
         <p className="hidden sm:block" style={{ color: '#FAF8F5', fontSize: 18, fontWeight: 500, margin: 0 }}>
           Offer valid for
         </p>
