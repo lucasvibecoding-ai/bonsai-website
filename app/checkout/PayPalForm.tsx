@@ -1,11 +1,13 @@
 'use client';
 
+import { useRef } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
-export default function PayPalForm({ email }: { email: string }) {
+export default function PayPalForm({ email, onEmailError }: { email: string; onEmailError: () => void }) {
   const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+  const rejectedForEmail = useRef(false);
 
   if (!clientId) {
     return <p style={{ color: '#dc2626' }}>PayPal is not configured.</p>;
@@ -29,9 +31,11 @@ export default function PayPalForm({ email }: { email: string }) {
         }}
         onClick={(_data, actions) => {
           if (!isValidEmail(email)) {
-            alert('Please enter your email address before paying.');
+            rejectedForEmail.current = true;
+            onEmailError();
             return actions.reject();
           }
+          rejectedForEmail.current = false;
           return actions.resolve();
         }}
         createOrder={async () => {
@@ -55,6 +59,10 @@ export default function PayPalForm({ email }: { email: string }) {
           }
         }}
         onError={() => {
+          if (rejectedForEmail.current) {
+            rejectedForEmail.current = false;
+            return;
+          }
           alert('Something went wrong with PayPal. Please try again.');
         }}
       />

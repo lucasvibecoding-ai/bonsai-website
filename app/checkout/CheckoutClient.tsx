@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import StripeForm from './StripeForm';
-import PayPalForm from './PayPalForm';
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 );
@@ -440,7 +439,7 @@ export default function CheckoutClient() {
                     },
                   }}
                 >
-                  <StripeForm email={email} onEmailChange={setEmail} paypalSlot={<PayPalForm email={email} />} />
+                  <StripeForm email={email} onEmailChange={setEmail} paypalEmail={email} />
                 </Elements>
               ) : (
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '180px' }}>

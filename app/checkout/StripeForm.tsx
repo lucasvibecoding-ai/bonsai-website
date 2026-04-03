@@ -8,10 +8,11 @@ import {
   useElements,
 } from '@stripe/react-stripe-js';
 import type { StripeExpressCheckoutElementClickEvent } from '@stripe/stripe-js';
+import PayPalForm from './PayPalForm';
 
 const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
-export default function StripeForm({ email, onEmailChange, paypalSlot }: { email: string; onEmailChange: (v: string) => void; paypalSlot?: React.ReactNode }) {
+export default function StripeForm({ email, onEmailChange, paypalEmail }: { email: string; onEmailChange: (v: string) => void; paypalEmail: string }) {
   const stripe = useStripe();
   const elements = useElements();
   const [isProcessing, setIsProcessing] = useState(false);
@@ -98,7 +99,9 @@ export default function StripeForm({ email, onEmailChange, paypalSlot }: { email
         }}
       />
 
-      {paypalSlot && <div style={{ marginTop: 12 }}>{paypalSlot}</div>}
+      <div style={{ marginTop: 12 }}>
+        <PayPalForm email={paypalEmail} onEmailError={() => { setEmailTouched(true); setError('Please enter your email address above.'); }} />
+      </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '24px 0' }}>
         <div style={{ flex: 1, height: 1, background: '#e5e7eb' }} />
