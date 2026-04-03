@@ -392,7 +392,7 @@ export default function CheckoutClient() {
               <span className="item-price">FREE</span>
             </div>
             <div className="line-item">
-              <span className="item-name">Bonsai Troubleshooting Guide</span>
+              <span className="item-name">Bonsai Aftercare Guide</span>
               <span className="item-price">FREE</span>
             </div>
             <div className="line-item">
@@ -400,7 +400,7 @@ export default function CheckoutClient() {
               <span className="item-price">FREE</span>
             </div>
             <div className="line-item">
-              <span className="item-name">Display &amp; Styling Masterclass</span>
+              <span className="item-name">Bonsai Styles &amp; Display Guide</span>
               <span className="item-price">FREE</span>
             </div>
 
