@@ -186,6 +186,7 @@ export default function Home() {
           .stack-row { max-width: 100%; }
           .closing-quote { font-size: 1.2rem; }
           .bonus-header { flex-wrap: wrap; }
+          .no-exp { font-size: 11px !important; letter-spacing: 1.5px !important; margin-bottom: 12px !important; }
         }
         @media (max-width: 480px) {
           .bonsai-page .container { padding: 0 24px; }
