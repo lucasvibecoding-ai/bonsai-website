@@ -188,6 +188,8 @@ export default function Home() {
           .course-intro { padding-top: 20px !important; }
           .hero-divider { display: none !important; }
           .price-old { font-size: 22px !important; }
+          .checkout-box { padding: 24px 16px !important; }
+          .cta-btn { font-size: 1.3rem !important; }
           .instructor-img { width: 100% !important; max-width: 400px !important; height: auto !important; padding: 0 24px; border-radius: 16px; }
           .phil-block { padding: 20px; }
           .stack-row { max-width: 100%; }
@@ -215,7 +217,7 @@ export default function Home() {
           #hero { width: 100% !important; margin-top: 16px; }
           .now-only { font-size: 36px !important; }
           .price-old { font-size: 22px !important; }
-          .cta-btn { font-size: 1.5rem !important; }
+          .cta-btn { font-size: 1.3rem !important; }
           .faq-q-text { font-weight: 500 !important; font-size: 18px !important; }
           .faq-q { font-size: 18px !important; }
           .stack-row { padding: 6px 0 !important; font-size: 18px; }
@@ -472,7 +474,7 @@ export default function Home() {
               <p style={{ maxWidth: 720, textAlign: 'left', fontSize: 24, margin: '0 auto 20px' }}>That feedback is worth more to me right now than charging full price. Honestly, I also need to find out if I can handle 50 support inboxes without forgetting to eat.</p>
               <p style={{ maxWidth: 720, textAlign: 'left', fontSize: 24, margin: '0 auto 20px' }}>So for this first group, the price is <strong>dramatically lower</strong>. Once those 50 spots fill, this page comes down and the full price goes live.</p>
             </div>
-            <div style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
+            <div className="checkout-box" style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
               <div className="price-old">Normally $97</div>
               <p id="get-access" className="now-only" style={{ fontSize: 44, color: 'var(--ink)', fontWeight: 700, marginBottom: 8 }}>Now Only <span style={{ color: 'var(--gold)' }}>$47</span></p>
               <div className="price-note">One-time payment. Lifetime access.</div>
@@ -569,7 +571,7 @@ export default function Home() {
             <div className="stack-row" style={{ borderBottom: 'none' }}><span className="label" style={{ fontWeight: 700, color: 'var(--ink)' }}>Total Value</span><span className="val" style={{ fontSize: 16 }}>$252</span></div>
           </section>
 
-          <div style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
+          <div className="checkout-box" style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
             <div className="price-old">Normally $97</div>
             <p className="now-only" style={{ fontSize: 44, color: 'var(--ink)', fontWeight: 700, marginBottom: 8 }}>Now Only <span style={{ color: 'var(--gold)' }}>$47</span></p>
             <div className="price-note">One-time payment. Lifetime access.</div>
@@ -638,7 +640,7 @@ export default function Home() {
             <div className="stack-row" style={{ borderBottom: 'none' }}><span className="label" style={{ fontWeight: 700, color: 'var(--ink)' }}>Total Value</span><span className="val" style={{ fontSize: 16 }}>$331</span></div>
           </section>
 
-          <div style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
+          <div className="checkout-box" style={{ maxWidth: 520, margin: '0 auto', padding: '40px 44px', borderRadius: 14, border: '2px solid rgba(58,99,71,0.25)', background: '#ffffff', boxShadow: '0 4px 24px rgba(0,0,0,0.06)', textAlign: 'center' }}>
             <div className="price-old">Normally $97</div>
             <p className="now-only" style={{ fontSize: 44, color: 'var(--ink)', fontWeight: 700, marginBottom: 8 }}>Now Only <span style={{ color: 'var(--gold)' }}>$47</span></p>
             <div className="price-note">One-time payment. Lifetime access.</div>
