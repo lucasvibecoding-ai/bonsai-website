@@ -297,7 +297,7 @@ export default function Home() {
           <section className="instructor">
 
             <div className="instructor-text">
-              <h2>My name is Kenji Murakami (村上健二).</h2>
+              <h2>My name is Keiko Murakami (村上恵子).</h2>
               <p>I&apos;ve spent years studying bonsai. Not just the technique, but the philosophy behind it.</p>
               <p>I&apos;ve learned from Japanese masters whose trees have been displayed at the Imperial Palace.</p>
               <p>What struck me wasn&apos;t only the craft.</p>
@@ -633,7 +633,7 @@ export default function Home() {
           <section className="closing">
             <div className="sm-divider" style={{ marginBottom: 20 }} />
             <p className="closing-quote">&quot;In a world that demands speed, bonsai asks you to slow down. And in that slowness, you find something you forgot you had.&quot;</p>
-            <p style={{ color: 'var(--ink-muted)', marginBottom: 0 }}>— Kenji Murakami, founder of The Bonsai Path</p>
+            <p style={{ color: 'var(--ink-muted)', marginBottom: 0 }}>— Keiko Murakami, founder of The Bonsai Path</p>
           </section>
 
           {/* FOOTER */}

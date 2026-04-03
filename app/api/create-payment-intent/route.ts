@@ -7,12 +7,22 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST() {
   try {
+    const product = await stripe.products.retrieve(
+      process.env.STRIPE_PRODUCT_ID!,
+      { expand: ['default_price'] }
+    );
+    const price = product.default_price as Stripe.Price;
+
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: 4700,
-      currency: 'usd',
+      amount: price.unit_amount!,
+      currency: price.currency,
       automatic_payment_methods: {
         enabled: true,
         allow_redirects: 'never',
+      },
+      metadata: {
+        product_id: product.id,
+        product_name: product.name,
       },
     });
 

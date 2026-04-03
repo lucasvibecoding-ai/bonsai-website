@@ -38,7 +38,7 @@ export default function Home() {
         }
 
         /* BASE TYPOGRAPHY — one size for all body text */
-        .bonsai-page { font-family: 'Lora', 'Lora Fallback', serif; color: rgb(43, 43, 43); line-height: 1.8; font-weight: 400; font-size: 18px; }
+        .bonsai-page { font-family: 'Lora', 'Lora Fallback', serif; color: rgb(43, 43, 43); line-height: 1.8; font-weight: 400; font-size: 20px; }
         .bonsai-page .container { max-width: 1080px; margin: 0 auto; padding: 0 40px; }
 
         /* Headings */
@@ -100,6 +100,7 @@ export default function Home() {
         .module-img { width: 280px; min-width: 280px; height: 260px; border-radius: 8px; background: linear-gradient(135deg, var(--bg-warm), var(--sand)); display: flex; align-items: center; justify-content: center; font-size: 28px; border: 1px solid var(--sand); overflow: hidden; position: relative; }
 
         .hereswhatyouget-mobile { display: none; }
+        .hero-text-mobile { display: none; }
 
         /* CTA */
         .cta-block { text-align: center; padding: 56px 0; }
@@ -188,11 +189,13 @@ export default function Home() {
         }
         @media (max-width: 480px) {
           .bonsai-page .container { padding: 0 24px; }
-          .bonsai-page { font-size: 18px; }
-          .bonsai-page p:not(.now-only), .bonsai-page li { font-size: 18px !important; }
+          .bonsai-page { font-size: 20px; }
+          .bonsai-page p:not(.now-only), .bonsai-page li { font-size: 20px !important; }
           .module-img, .bonus-img { height: auto; aspect-ratio: 1/1; }
           .hereswhatyouget-desktop { display: none !important; }
           .hereswhatyouget-mobile { display: block !important; }
+          .hero-text-desktop { display: none !important; }
+          .hero-text-mobile { display: block !important; }
           .bonus-card h3, .module-card h3 { margin-bottom: 14px !important; }
           .bonus-desc, .module-sub { margin-bottom: 22px !important; }
           .badge { font-size: 10px; letter-spacing: 1.5px; padding: 5px 12px; }
@@ -215,20 +218,27 @@ export default function Home() {
           {/* HERO */}
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
             <p style={{ fontSize: 16, fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--ink-muted)', marginBottom: 20 }}>No prior experience required</p>
-            <h1>Bonsai: Learn the Ancient Japanese Art of <span className="accent">Sculpting Trees</span></h1>
+            <h1>Bonsai: Learn the 1,500-Year-Old Japanese Art of <span className="accent">Sculpting Trees</span></h1>
             <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: 'var(--ink-muted)', marginTop: 8, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>Without needing years of practice or expensive supplies</p>
 
             <div className="split" style={{ paddingTop: 28, paddingBottom: 0 }}>
-              <div className="split-text" style={{ textAlign: 'left', flex: '1.5' }}>
+              <div className="split-text hero-text-desktop" style={{ textAlign: 'left', flex: '1.5' }}>
                 <p style={{ marginBottom: 0, textAlign: 'left' }}>
                   Bonsai is more than just a tree.
                   <br /><br />
-                  It&apos;s a 1,500-year-old Japanese practice of releasing stress, easing anxiety, and letting go of overthinking.
+                  It&apos;s an ancient Japanese art of releasing stress, easing anxiety, and letting go of overthinking.
                 </p>
               </div>
               <div style={{ flex: '1 1 50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image id="hero" src="/hero2.jpg" alt="Beautiful bonsai tree" width={600} height={600} style={{ width: '75%', height: 'auto', borderRadius: 16, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }} />
               </div>
+            </div>
+            <div className="hero-text-mobile" style={{ textAlign: 'left', marginTop: 24 }}>
+              <p style={{ marginBottom: 0 }}>
+                Bonsai is more than just a tree.
+                <br /><br />
+                It&apos;s a 1,500-year-old Japanese practice of releasing stress, easing anxiety, and letting go of overthinking.
+              </p>
             </div>
           </section>
 
@@ -254,15 +264,15 @@ export default function Home() {
 
           {/* BUT HERE'S WHAT REALLY KEEPS YOU UP */}
           <section style={{ padding: '0 0 56px' }}>
-            <h2 className="bonsai-center" style={{ marginBottom: 64 }}>But there&apos;s a deeper issue no one talks about.</h2>
+            <h2 className="bonsai-center" style={{ marginBottom: 64 }}>When meditation doesn&apos;t work.</h2>
             <div className="split" style={{ paddingTop: 0, paddingBottom: 0, gap: 64 }}>
               <div className="split-text" style={{ flex: '1.5' }}>
-                <p>You scroll. You consume. You watch. You buy things made by machines in factories.</p>
-                <p>When was the last time you <strong>created</strong> something?</p>
-                <p>When was the last time you made something with your hands that made someone say <strong>&quot;Wait... YOU made this?&quot;</strong></p>
-                <p>When was the last time you felt completely present — not thinking about work, not checking your phone, just... creating?</p>
-                <p>You want a hobby that&apos;s actually meaningful. Something meditative. Something therapeutic.</p>
-                <p>Not another thing to consume. <strong>Something to create.</strong></p>
+                <p>Some people can sit still and clear their mind.</p>
+                <p>Most can&apos;t.</p>
+                <p>If you&apos;ve tried meditation and your brain just gets louder, you&apos;re not broken.</p>
+                <p>You just need something for your hands to do while your mind learns to be quiet.</p>
+                <p><strong>Bonsai is meditation that doesn&apos;t feel like meditation.</strong></p>
+                <p>Your hands are busy. Your eyes are focused. And somewhere between the second and third cut, the noise stops.</p>
               </div>
               <div style={{ flex: '1.2', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image src="/meditation.png" alt="Hands working on a bonsai tree" width={600} height={600} style={{ width: '100%', height: 'auto', borderRadius: 16, boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }} />
@@ -271,6 +281,14 @@ export default function Home() {
           </section>
 
           <section style={{ padding: '80px 0 64px' }}>
+              <h2 style={{ marginBottom: 44, textAlign: 'center' }}>&quot;It takes years to see results. I&apos;m too impatient.&quot;</h2>
+              <p>Your FIRST pruning session transforms a bushy plant into something that&apos;s clearly a bonsai.</p>
+              <p>That happens in one afternoon. Not one decade.</p>
+              <p>The &quot;holy shit, I made that&quot; moment? That&apos;s day one.</p>
+              <p>Every week, your tree shows you something new.</p>
+          </section>
+
+          <section style={{ padding: '0 0 64px' }}>
               <h2 style={{ marginBottom: 44, textAlign: 'center' }}>&quot;Isn&apos;t this an expensive hobby?&quot;</h2>
               <p><strong>Your first bonsai costs less than lunch.</strong></p>
               <p>A starter tree is <strong>$12-15</strong>. Shears and wire cost <strong>under $20.</strong></p>
@@ -281,11 +299,11 @@ export default function Home() {
           {/* ANYONE CAN LEARN */}
           <section style={{ padding: '48px 0' }}>
             <h2 className="bonsai-center" style={{ marginBottom: 64 }}>Anyone can learn Bonsai.</h2>
-            <div style={{ maxWidth: 640, margin: '0 auto' }}>
-              <p><strong>&rarr; Even if you&apos;ve never touched a bonsai before.</strong> There&apos;s a simple step-by-step method that works on any tree, any species, any skill level. No natural talent needed.</p>
-              <p><strong>&rarr; Even if you think bonsai is too hard.</strong> A finished bonsai is the most impressive thing you can have on your desk. That&apos;s exactly why people will stare at yours.</p>
-              <p><strong>&rarr; Even if you don&apos;t know which tree to pick.</strong> You&apos;ll learn exactly which species fits your space, your light, and your lifestyle. One module and you&apos;ll know more than 90% of beginners.</p>
-              <p><strong>&rarr; Even if you don&apos;t think of yourself as &quot;creative.&quot;</strong> You need a tree, a pair of shears, and 20 minutes. That&apos;s it.</p>
+            <div style={{ maxWidth: 640, margin: '0 auto', fontSize: 20 }}>
+              <p><span style={{ color: '#1b4332', fontWeight: 600 }}>&rarr; Even if you&apos;ve never touched a bonsai before.</span> There&apos;s a simple step-by-step method that works on any tree, any species, any skill level. No natural talent needed.</p>
+              <p><span style={{ color: '#264432', fontWeight: 600 }}>&rarr; Even if you think bonsai is too hard.</span> A finished bonsai is the most impressive thing you can have on your desk. That&apos;s exactly why people will stare at yours.</p>
+              <p><span style={{ color: '#2d6a4f', fontWeight: 600 }}>&rarr; Even if you don&apos;t know which tree to pick.</span> You&apos;ll learn exactly which species fits your space, your light, and your lifestyle. One module and you&apos;ll know more than 90% of beginners.</p>
+              <p><span style={{ color: '#3a6347', fontWeight: 600 }}>&rarr; Even if you don&apos;t think of yourself as &quot;creative.&quot;</span> You need a tree, a pair of shears, and 20 minutes. That&apos;s it.</p>
             </div>
           </section>
 
@@ -331,7 +349,7 @@ export default function Home() {
           <section className="instructor">
 
             <div className="instructor-text">
-              <h2>My name is Kenji Murakami (村上健二).</h2>
+              <h2>My name is Keiko Murakami (村上恵子).</h2>
               <p>I&apos;ve spent years studying bonsai. Not just the technique, but the philosophy behind it.</p>
               <p>I&apos;ve learned from Japanese masters whose trees have been displayed at the Imperial Palace.</p>
               <p>What struck me wasn&apos;t only the craft.</p>
@@ -357,7 +375,7 @@ export default function Home() {
               <Image className="hereswhatyouget-desktop" src="/hereiswhatyouget.png" alt="Here's what you get" width={800} height={400} style={{ width: '100%', maxWidth: 700, height: 'auto', margin: '0 auto 24px' }} />
               <Image className="hereswhatyouget-mobile" src="/hereiswhatyouget_mobile.png" alt="Here's what you get" width={400} height={400} style={{ width: '100%', maxWidth: 400, height: 'auto', margin: '0 auto 24px' }} />
             </div>
-            <h2 className="bonsai-center" style={{ marginBottom: 24 }}>&#10022; What&apos;s Inside &#10022;</h2>
+            <h2 className="bonsai-center" style={{ marginTop: 86, marginBottom: 24 }}>&#10022; What&apos;s Inside &#10022;</h2>
 
             <div className="module-card">
               <div className="module-label">Module 1</div>
@@ -474,9 +492,9 @@ export default function Home() {
           <section className="guarantee-section">
             <Image src="/guarantee1.webp" alt="90-Day Money Back Guarantee" width={160} height={160} style={{ width: 130, height: 130, marginBottom: 16, margin: '0 auto 16px', display: 'block' }} />
             <h2 style={{ textAlign: 'center' }}>Try it risk-free</h2>
-            <p><strong>You don&apos;t have to make the final decision now.</strong></p>
-            <p>Get access to the full course. Pick your first tree. Learn how to water it properly. Make your first pruning cuts. Watch new growth emerge exactly where you guided it.</p>
-            <p>If you don&apos;t love it, email hello@thebonsaipath.com within 90 days for a full refund. Within 24 hours. <strong>No questions asked.</strong></p>
+            <p style={{ fontSize: 20 }}><strong>You don&apos;t have to make the final decision now.</strong></p>
+            <p style={{ textAlign: 'left', fontSize: 20 }}>Get access to the full course. Pick your first tree. Learn how to water it properly. Make your first pruning cuts. Watch new growth emerge exactly where you guided it.</p>
+            <p style={{ textAlign: 'left', fontSize: 20 }}>If you don&apos;t love it, email hello@thebonsaipath.com within 90 days for a full refund. Within 24 hours. <strong>No questions asked.</strong></p>
           </section>
 
           <div className="bonsai-divider" />
@@ -637,7 +655,7 @@ export default function Home() {
           <section className="closing">
             <div className="sm-divider" style={{ marginBottom: 20 }} />
             <p className="closing-quote">&quot;In a world that demands speed, bonsai asks you to slow down. And in that slowness, you find something you forgot you had.&quot;</p>
-            <p style={{ color: 'var(--ink-muted)', marginBottom: 0 }}>— Kenji Murakami, founder of The Bonsai Path</p>
+            <p style={{ color: 'var(--ink-muted)', marginBottom: 0 }}>— Keiko Murakami, founder of The Bonsai Path</p>
           </section>
 
         </div>

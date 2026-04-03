@@ -54,7 +54,7 @@ export default function OrderConfirmation({ customerEmail }: OrderConfirmationPr
           </Text>
 
           <Text style={signature}>
-            — Kenji Murakami
+            — Keiko Murakami
           </Text>
 
           <Hr style={divider} />
