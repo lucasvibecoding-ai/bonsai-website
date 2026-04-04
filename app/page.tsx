@@ -234,7 +234,7 @@ export default function Home() {
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
             <p className="no-exp" style={{ fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-muted)' }}>No prior experience required</p>
             <h1>Your Brain Won&apos;t Shut Off. This 1,500-Year-Old Japanese <span className="accent">Practice Will.</span></h1>
-            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 'none', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>Without an app, a subscription, or breathing exercises.</p>
+            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 'none', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>Without expensive apps, subscriptions, or breathing exercises.</p>
 
             <div className="split hero-split" style={{ paddingTop: 28, paddingBottom: 0 }}>
               <div className="split-text hero-text-desktop" style={{ textAlign: 'left', flex: '1.5' }}>
