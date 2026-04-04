@@ -609,10 +609,7 @@ export default function Home() {
                   <li>&#10022; <strong>Formal Upright (Chokkan)</strong> the classic straight trunk, perfect symmetry. The most forgiving style for first-timers</li>
                   <li>&#10022; <strong>Informal Upright (Moyogi)</strong> gentle S-curves that mimic how real trees grow in nature</li>
                   <li>&#10022; <strong>Slanting, Cascade &amp; Semi-Cascade</strong> dramatic styles that add movement and depth to any display</li>
-                  <li>&#10022; How to <strong>read your tree&apos;s natural shape</strong> and choose the style it&apos;s already leaning toward</li>
-                  <li>&#10022; How to choose <strong>the perfect pot</strong> — glazed vs unglazed, proportion rules, and color theory</li>
-                  <li>&#10022; <strong>Display surfaces, stands &amp; accent plants</strong> to create a museum-quality miniature landscape</li>
-                  <li>&#10022; <strong>Photography tips</strong> to capture your bonsai so it looks as stunning on screen as in person</li>
+                  <li>&#10022; How to choose <strong>the perfect pot</strong> glazed vs unglazed, proportion rules, and color theory</li>
                 </ul>
               </div>
             </div>
