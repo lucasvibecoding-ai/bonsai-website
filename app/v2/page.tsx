@@ -234,7 +234,7 @@ export default function Home() {
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
             <p className="no-exp" style={{ fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-muted)' }}>No prior experience required</p>
             <h1>Bonsai: Learn the 1,500-Year-Old Japanese Practice of <span className="accent">Calming Down Your Mind</span></h1>
-            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 'none', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>No, you don&apos;t need a garden, art talent, or years of practice.</p>
+            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 'none', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>Without a garden, art talent, or years of practice.</p>
 
             <div className="split hero-split" style={{ paddingTop: 28, paddingBottom: 0 }}>
               <div className="split-text hero-text-desktop" style={{ textAlign: 'left', flex: '1.5' }}>
