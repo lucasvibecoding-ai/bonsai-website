@@ -32,7 +32,7 @@ export default function OrderConfirmation({ customerEmail }: OrderConfirmationPr
           </Text>
 
           <Text style={text}>
-            Here&apos;s what&apos;s happening: the course is currently being finalized and will be ready by mid-April. I want to make sure what you get is worth every penny.
+            Here&apos;s what&apos;s happening: based on student feedback, the course is currently being rebuilt and expanded to give you even more value. I want to make sure what you get is worth every penny.
           </Text>
 
           <Text style={text}>
@@ -44,13 +44,13 @@ export default function OrderConfirmation({ customerEmail }: OrderConfirmationPr
           </Text>
 
           <Text style={optionText}>
-            <strong>Option 2 — Wait for the full launch.</strong> It&apos;s coming mid-April. It&apos;s going to be incredible. As a thank you for your patience, I&apos;ll give you a <strong>steep discount</strong> on the Bonsai Community once it opens — it&apos;s going to be a private space for serious bonsai practitioners, and you&apos;ll get in at a fraction of the price.
+            <strong>Option 2 — Wait for v2.</strong> It&apos;s coming mid-April. It&apos;s going to be incredible. As a thank you for your patience, I&apos;ll give you a <strong>steep discount</strong> on the Bonsai Community once it opens — it&apos;s going to be a private space for serious bonsai practitioners, and you&apos;ll get in at a fraction of the price.
           </Text>
 
           <Hr style={divider} />
 
           <Text style={text}>
-            Just reply to this email and let me know which you&apos;d prefer. If I don&apos;t hear back, I&apos;ll assume you&apos;re happy to wait and I&apos;ll send you access as soon as the new version is live.
+            Just reply to this email and let me know which you&apos;d prefer. If I don&apos;t hear back, I&apos;ll assume you&apos;re happy to wait and I&apos;ll send you access as soon as v2 is live.
           </Text>
 
           <Text style={signature}>
