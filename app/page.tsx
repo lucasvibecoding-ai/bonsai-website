@@ -319,7 +319,7 @@ export default function Home() {
             <div style={{ maxWidth: 640, margin: '0 auto', fontSize: 20 }}>
               <p><span style={{ color: '#1b4332', fontWeight: 600 }}>&rarr; Even if you&apos;ve never touched a bonsai before.</span> There&apos;s a simple step-by-step method that works on any tree, any species, any skill level. No natural talent needed.</p>
               <p><span style={{ color: '#264432', fontWeight: 600 }}>&rarr; Even if you think bonsai is too hard.</span> A finished bonsai is the most impressive thing you can have on your desk. That&apos;s exactly why people will stare at yours.</p>
-              <p><span style={{ color: '#2d6a4f', fontWeight: 600 }}>&rarr; Even if you don&apos;t know which tree to pick.</span> You&apos;ll learn exactly which species fits your space, your light, and your lifestyle. One module and you&apos;ll know more than 90% of beginners.</p>
+
               <p><span style={{ color: '#3a6347', fontWeight: 600 }}>&rarr; Even if you don&apos;t think of yourself as &quot;creative.&quot;</span> You need a tree, a pair of shears, and 20 minutes. That&apos;s it.</p>
             </div>
           </section>
