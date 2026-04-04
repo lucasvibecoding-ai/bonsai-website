@@ -61,7 +61,7 @@ export default function Home() {
         /* Badge */
         .badge { display: inline-block; padding: 6px 16px; border: 1.5px solid var(--green); border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 20px; }
         .no-exp { font-size: 16px; letter-spacing: 2.5px; margin-bottom: 20px; }
-        .hero-sub { font-size: clamp(1rem, 2vw, 1.2rem); }
+        .hero-sub { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
         .course-intro { padding: 80px 0 0; }
 
         /* Hero */
