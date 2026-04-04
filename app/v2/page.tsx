@@ -61,7 +61,7 @@ export default function Home() {
         /* Badge */
         .badge { display: inline-block; padding: 6px 16px; border: 1.5px solid var(--green); border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 20px; }
         .no-exp { font-size: 16px; letter-spacing: 2.5px; margin-bottom: 20px; }
-        .hero-sub { font-size: clamp(1rem, 2vw, 1.2rem); }
+        .hero-sub { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
         .course-intro { padding: 80px 0 0; }
 
         /* Hero */
@@ -234,7 +234,7 @@ export default function Home() {
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
             <p className="no-exp" style={{ fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-muted)' }}>No prior experience required</p>
             <h1>Bonsai: Learn the 1,500-Year-Old Japanese Practice of <span className="accent">Calming Down Your Mind</span></h1>
-            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>No, you don&apos;t need a garden, art talent, or years of practice.</p>
+            <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, maxWidth: 'none', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}>No, you don&apos;t need a garden, art talent, or years of practice.</p>
 
             <div className="split hero-split" style={{ paddingTop: 28, paddingBottom: 0 }}>
               <div className="split-text hero-text-desktop" style={{ textAlign: 'left', flex: '1.5' }}>
