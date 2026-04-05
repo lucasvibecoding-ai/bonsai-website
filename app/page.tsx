@@ -232,7 +232,7 @@ export default function Home() {
 
           {/* HERO */}
           <section style={{ paddingTop: 64, paddingBottom: 48, textAlign: 'center' }}>
-            <p className="no-exp" style={{ fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-muted)' }}>No prior experience required</p>
+            <p className="no-exp" style={{ fontWeight: 700, textTransform: 'uppercase', color: 'var(--ink-muted)' }}>For the first time online</p>
             <h1>Turn Any Plant Into Your First <span className="accent">Bonsai</span> Without Killing It.</h1>
             <p className="hero-sub" style={{ color: 'var(--ink-muted)', marginTop: 8, fontStyle: 'italic' }}>Even if you&apos;ve never cared for a plant before.</p>
 
