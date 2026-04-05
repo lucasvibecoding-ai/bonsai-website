@@ -249,7 +249,7 @@ export default function Home() {
                 <Image id="hero" src="/herov7.jpg" alt="Beautiful bonsai tree" width={600} height={600} style={{ width: '75%', height: 'auto', borderRadius: 16, boxShadow: '0 12px 40px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.1)' }} />
               </div>
             </div>
-            <div className="hero-text-mobile" style={{ textAlign: 'left', marginTop: 24 }}>
+            <div className="hero-text-mobile" style={{ textAlign: 'left', marginTop: 36 }}>
               <p style={{ marginBottom: 0 }}>
                 Bonsai is more than just a tree.
                 <br /><br />
