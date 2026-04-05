@@ -253,7 +253,7 @@ export default function Home() {
               <p style={{ marginBottom: 0 }}>
                 Bonsai is more than just a tree.
                 <br /><br />
-                It&apos;s an ancient Japanese art of releasing stress, easing anxiety, and letting go of overthinking.
+                It&apos;s a <strong>1,500-year-old</strong> Japanese art of patience, calm, and sculpting with <strong>your own hands</strong>.
               </p>
             </div>
           </section>
